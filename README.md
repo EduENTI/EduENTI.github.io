@@ -23,15 +23,26 @@
     1. \`: En línea (hay que abrir y cerrar).
     2. \`\`\`: En bloque (hay que abrir y cerrar).
 4. **Anotaciones y avisos**:
-    1. [!NOTE]: Para una nota.
-    2. []:
-    3. []:
-    4. []:
-    5. []:
+    1. > [!NOTE]: Para una nota.
+    2. > [!TIP]: Para unu consejo o **recomendación**.
+    3. > [!WARNING]: Para un aviso de **precaución**.
+    4. > [!IMPORTANT]: Para una anotación a **tener en cuenta**.
+    5. > [!CAUTION]: Para un aviso de **cuidado**.
 5. **Enlaces**:
-    1. 
+    1. La primera parte del enlace, el hipertexto, se escribe entre corchetes *"[]"*.
+    2. La segunda parte del enlace, la URL, se escribe entre paréntesis *"()"*.
 6. **Imágenes**:
-
+    1. Constan de un símbolo antes de la imágen, para diferenciarlas de los hipervínculos: *!*.
+    2. La primera parte del enlace, la descripción, se escribe entre corchetes *"[]"*.
+    3. La segunda parte del enlace, la URL, se escribe entre paréntesis *"()"*.
+7. **Listas**:
+    1. Las partes de la lista sin marcar (tachar) se escriben: *"- [ ]"*.
+    2. Las partes de la lista marcadas se escriben: *"- [x]"*
+8. **Texto**:
+    1. *: Para darle énfasis en forma de cursiva (hay que cerrarlas).
+    2. **: Para darle énfasis en forma de negrita (hay que cerrarlas).
+    3. ***: Para darle énfasis en forma de negrita y cursiva (hay que cerrarlas).
+    4. >: Para citar texto.
 
 
 ### Investigación sobre etiquetas no vistas en clase de caracter **interesante**
