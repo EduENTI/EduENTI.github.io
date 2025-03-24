@@ -56,5 +56,4 @@
 | Legolas | Elfo    | 2931 |
 
 
--  Aunque MD no soporta el subrayado se puede usar < u > de html para <u>subrayar</u>.
 - Se pueden poner emotes usando *":"* para abrir y cerrar: :smile: :skull:.
