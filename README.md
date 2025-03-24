@@ -47,12 +47,12 @@
 
 ### Investigación sobre etiquetas no vistas en clase de caracter **interesante**
 - Se pueden hacer tablas con los símbolos *"|"*" y *"-"*. Debajo un ejemplo:
-| Nombre |   Raza  | Edad |
-|--------|---------|------|
-| Gandalf| Maia    | 2000 |
-| Bilbo  | Hobbit  | 131  |
-| Aragorn| Humano  | 87   |
-| Légolas| Elfo    | 2931 |
+| Nombre  | Raza    | Edad |
+|---------|---------|------|
+| Gandalf | Maia    | 2000 |
+| Bilbo   | Hobbit  | 131  |
+| Aragorn | Humano  | 87   |
+| Legolas | Elfo    | 2931 |
 
 -  Aunque MD no soporta el subrayado se puede usar < u > de html para <u>subrayar</u>.
-- Se pueden poner emotes usando *":"* para abrir y cerrar: :smile: :skull: :clown: .
+- Se pueden poner emotes usando *":"* para abrir y cerrar: :smile: :skull:.
