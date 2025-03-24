@@ -23,11 +23,11 @@
     1. \`: En línea (hay que abrir y cerrar).
     2. \`\`\`: En bloque (hay que abrir y cerrar).
 4. **Anotaciones y avisos**:
-    1. > [!NOTE]: Para una nota.
-    2. > [!TIP]: Para unu consejo o **recomendación**.
-    3. > [!WARNING]: Para un aviso de **precaución**.
-    4. > [!IMPORTANT]: Para una anotación a **tener en cuenta**.
-    5. > [!CAUTION]: Para un aviso de **cuidado**.
+    1. \> [!NOTE]: Para una nota.
+    2. \> [!TIP]: Para unu consejo o **recomendación**.
+    3. \> [!WARNING]: Para un aviso de **precaución**.
+    4. \> [!IMPORTANT]: Para una anotación a **tener en cuenta**.
+    5. \> [!CAUTION]: Para un aviso de **cuidado**.
 5. **Enlaces**:
     1. La primera parte del enlace, el hipertexto, se escribe entre corchetes *"[]"*.
     2. La segunda parte del enlace, la URL, se escribe entre paréntesis *"()"*.
@@ -42,8 +42,17 @@
     1. *: Para darle énfasis en forma de cursiva (hay que cerrarlas).
     2. **: Para darle énfasis en forma de negrita (hay que cerrarlas).
     3. ***: Para darle énfasis en forma de negrita y cursiva (hay que cerrarlas).
-    4. >: Para citar texto.
+    4. \>: Para citar texto.
 
 
 ### Investigación sobre etiquetas no vistas en clase de caracter **interesante**
-- 
+- Se pueden hacer tablas con los símbolos *"|"*" y *"-"*. Debajo un ejemplo:
+| Nombre |   Raza  | Edad |
+|--------|---------|------|
+| Gandalf| Maia    | 2000 |
+| Bilbo  | Hobbit  | 131  |
+| Aragorn| Humano  | 87   |
+| Légolas| Elfo    | 2931 |
+
+-  Aunque MD no soporta el subrayado se puede usar < u > de html para <u>subrayar</u>.
+- Se pueden poner emotes usando *":"* para abrir y cerrar: :smile: :skull: :clown: .
