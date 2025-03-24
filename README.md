@@ -20,8 +20,8 @@
     1. -: Sin ordenar.
     2. 1., 2., etc.: Ordenados
 3. Código:
-    1. `: En línea (hay que abrir y cerrar).
-    2. ```: En bloque (hay que abrir y cerrar).
+    1. \`: En línea (hay que abrir y cerrar).
+    2. \`\`\`: En bloque (hay que abrir y cerrar).
 4. Anotaciones y avisos:
     1. [!NOTE]: Para una nota.
 
