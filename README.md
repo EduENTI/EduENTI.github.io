@@ -57,3 +57,7 @@
 
 
 - Se pueden poner emotes usando *":"* para abrir y cerrar: :smile: :skull:.
+
+## Referencias
+
+- [Markdown](https://markdown.es/sintaxis-markdown/)
