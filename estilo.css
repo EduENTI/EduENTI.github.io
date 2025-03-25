@@ -80,5 +80,15 @@ footer p {
 	color: #3E3F5B;
 }
 
+.navegacion-web{
+	border: 4px dashed #73ae6d;
+	padding: 10px;
+}
 
+.error{
+	color:#ab1414;
+}
 
+.you-win{
+	color:#459144;
+}
