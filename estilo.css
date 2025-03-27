@@ -92,3 +92,7 @@ footer p {
 .you-win{
 	color:#459144;
 }
+
+.input-error{
+	border: 1px solid #ab1414;
+}

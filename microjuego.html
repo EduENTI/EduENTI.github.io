@@ -5,80 +5,87 @@
 		
 		<link rel="stylesheet" href="estilo.css" />
 	
-	<script>
-		let num_max = 100;
-		let num_min = 1;
-		let numero_adivinar = Math.floor(Math.random()*num_max)+num_min;
-		let contador = 0;
-		
-		
-		function compara_numero ()
-		{
-			let mi_numero_input = document.getElementById("tu-numero");
-			let mi_numero = mi_numero_input.value;
-			let resultado = document.getElementById("resultado");
-			let contador_parrafo = document.getElementById("contador");
+		<script>
+			let num_max = 100;
+			let num_min = 1;
+			let numero_adivinar = Math.floor(Math.random()*num_max)+num_min;
+			let contador = 0;
+			let intentos_maximos = 10;
 			
-			
-			console.log(numero_adivinar.value);
-			
-			if (mi_numero < 1 || mi_numero > 100 || mi_numero === "")
+			function compara_numero ()
 			{
-				console.log("Alerta!");
-				return 1;
-			}
-			else
-			{
-				if (mi_numero > numero_adivinar)
+				let mi_numero_input = document.getElementById("tu-numero");
+				let mi_numero = mi_numero_input.value;
+				let resultado = document.getElementById("resultado");
+				let contador_parrafo = document.getElementById("contador");
+				let cajetilla = document.getElementById("field-button");
+				let fallo = false;
+				
+				console.log(numero_adivinar.value);
+				
+				if (mi_numero < 1 || mi_numero > 100 || mi_numero === "")
 				{
-					resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>menor</strong> que "+mi_numero+".</em>";
-					//resultado.style.color = "#ab1414";
-				}
-				else if (mi_numero < numero_adivinar)
-				{
-					resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>mayor</strong> que "+mi_numero+".</em>";
-					//resultado.style.color = "#ab1414";
+					console.log("Alerta!");
+					return 1;
 				}
 				else
 				{
-					resultado.innerHTML = "<em class=\"you-win\"><strong>¡Has acertado el número!</strong> Era el número "+numero_adivinar+".</em>";
-					//resultado.style.color = "#459144";
-				}
-				
-				contador++;
-				
-				if(numero_adivinar == mi_numero)
-				{
-					contador_parrafo.innerHTML = "Te ha llevado "+contador+" intentos adivinar el número.";
-				}
-				else
-				{
-					contador_parrafo.innerHTML = "Llevas un total de "+contador+" intentos.";
-				}
+					if (mi_numero > numero_adivinar)
+					{
+						resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>menor</strong> que "+mi_numero+".</em>";
+						//resultado.style.color = "#ab1414";
+						fallo = true;
+					}
+					else if (mi_numero < numero_adivinar)
+					{
+						resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>mayor</strong> que "+mi_numero+".</em>";
+						//resultado.style.color = "#ab1414";
+						fallo = true;
+					}
+					else
+					{
+						resultado.innerHTML = "<em class=\"you-win\"><strong>¡Has acertado el número!</strong> Era el número "+numero_adivinar+".</em>";
+						//resultado.style.color = "#459144";
+						fallo = false;
 
+					}
+					
+					if(fallo)
+					{
+						cajetilla.classList.add("input-error");
+					}
+					else
+					{
+						cajetilla.classList.remove("input-error");
+					}
+					
+					contador++;
+					
+					if(numero_adivinar == mi_numero)
+					{
+						contador_parrafo.innerHTML = "Te ha llevado "+contador+" intentos adivinar el número.";
+					}
+					else
+					{
+						contador_parrafo.innerHTML = "Llevas un total de "+contador+" intentos.";
+					}
+
+					if (contador >= intentos_maximos)
+					{
+						cajetilla.disabled = true;
+						cajetilla.style.display = "none";
+						resultado.innerHTML = "<em class='error'>Has alcanzado el máximo de intentos.</em>";
+					}
+					
+					mi_numero_input.value = "";
+					
+					mi_numero_input.focus();
+				}
 				
-				mi_numero_input.value = "";
 				
-				mi_numero_input.focus();
 			}
 			
-			
-		}
-	</script>	
-				
-				mi_numero_input.focus();
-			}
-			
-			
-		}
-	</script>	
-				
-				mi_numero_input.focus();
-			}
-			
-			
-		}
-	</script>	
+		</script>	
 	
 	</head>
 	
