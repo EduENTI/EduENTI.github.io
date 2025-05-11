@@ -2,9 +2,9 @@
 <html lang="es">
 	<head>
 		<title>JUEGO</title>
-		
 		<link rel="stylesheet" href="estilo.css" />
-	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
 			let num_max = 100;
 			let num_min = 1;
@@ -33,21 +33,17 @@
 					if (mi_numero > numero_adivinar)
 					{
 						resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>menor</strong> que "+mi_numero+".</em>";
-						//resultado.style.color = "#ab1414";
 						fallo = true;
 					}
 					else if (mi_numero < numero_adivinar)
 					{
 						resultado.innerHTML = "<em class=\"error\">El numero a adivinar es <strong>mayor</strong> que "+mi_numero+".</em>";
-						//resultado.style.color = "#ab1414";
 						fallo = true;
 					}
 					else
 					{
 						resultado.innerHTML = "<em class=\"you-win\"><strong>¡Has acertado el número!</strong> Era el número "+numero_adivinar+".</em>";
-						//resultado.style.color = "#459144";
 						fallo = false;
-
 					}
 					
 					if(fallo)
@@ -78,59 +74,50 @@
 					}
 					
 					mi_numero_input.value = "";
-					
 					mi_numero_input.focus();
 				}
-				
-				
 			}
-			
 		</script>	
-	
 	</head>
-	
-	<main>
-		<body>
-		<!-- Encabezado -->
-			
-			<header>
-				<h1>CYBERSECURITY PORTFOLIO</h1>
-				
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="cv.html">CV</a></li>
-						<li><a href="hobbies.html">Hobbies</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-						<li><a href="microjuego.html">Juego</a></li>
-					</ul>
-				</nav>
-				
-			</header>
-			
-			<h2>Minijuego</h2>
-			
-			<form>
-				<h3>Adivina el número</h3>
-				<p>Adivina el número que he generado. Es un número entre el  <strong>1</strong> y el <strong>100</strong>.</p>
-				<p id="resultado"><strong>¡Prueba suerte!</strong></p>
-				<p id="contador"></p>
-				<p><label for="tu-numero">Tu número: </label><input type="number" name="numeroElegido" id="tu-numero" /></p>
-				<p><label for="field-button"></label><input type="button" name="button" id="field-button" value="Adivina!" onClick="compara_numero ();" /></p>
-			</form>
-			
-		</body>
-	</main>
-	<footer>
-		<nav class="navegacion-web">
-			<ul>
-				<li><a href="index.html">Home</a> - Presentación personal.</li>
-				<li><a href="cv.html">CV</a> - Estudios y trabajos.</li>
-				<li><a href="hobbies.html">Hobbies</a> - Gustos e intereses.</li>
-				<li><a href="contacto.html">Contacto</a> - WORK IN PROGRESS...</li>
-				<li><a href="microjuego.html">Juego</a> - Minijuego.</li>
-			</ul>
-		</nav>
-		<p>&copy; 2025 XUT</p>
-	</footer>
-</hmtl>
+	<body class="fondo-papeles">
+		<header class="papel">
+			<h1>CYBERSECURITY PORTFOLIO</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="microjuego.html">Juego</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="contenedor-papeles">
+			<article class="papel centrado">
+				<h2>Minijuego</h2>
+				<form>
+					<h3>Adivina el número</h3>
+					<p>Adivina el número que he generado. Es un número entre el  <strong>1</strong> y el <strong>100</strong>.</p>
+					<p id="resultado"><strong>¡Prueba suerte!</strong></p>
+					<p id="contador"></p>
+					<p><label for="tu-numero">Tu número: </label><input type="number" name="numeroElegido" id="tu-numero" /></p>
+					<p><label for="field-button"></label><input type="button" name="button" id="field-button" value="Adivina!" onClick="compara_numero ();" /></p>
+				</form>
+			</article>
+		</main>
+		
+		<footer class="papel centrado">
+			<nav class="navegacion-web">
+				<ul>
+					<li><a href="index.html">Home</a> - Presentación personal.</li>
+					<li><a href="cv.html">CV</a> - Estudios y trabajos.</li>
+					<li><a href="hobbies.html">Hobbies</a> - Gustos e intereses.</li>
+					<li><a href="contacto.html">Contacto</a> - WORK IN PROGRESS...</li>
+					<li><a href="microjuego.html">Juego</a> - Minijuego.</li>
+				</ul>
+			</nav>
+			<p>&copy; 2025 XUT</p>
+		</footer>
+	</body>
+</html>

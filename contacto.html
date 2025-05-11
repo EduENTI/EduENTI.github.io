@@ -2,13 +2,11 @@
 <html lang="es">
 	<head>
 		<title>CONTACTO</title>
-		
 		<link rel="stylesheet" href="estilo.css" />
-		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
-		
 			function validarCampos(){
-				
 				let campos_obligatorios = document.querySelectorAll(".obligatorio");
 				let formulario_valido = true;
 				
@@ -28,59 +26,51 @@
 				return formulario_valido;
 			}
 		</script>
-		
 	</head>
-	
-	<main>
-	
-		<body>
-			<!-- Encabezado -->
-			
-			<header>
-				<h1>CYBERSECURITY PORTFOLIO</h1>
-				
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="cv.html">CV</a></li>
-						<li><a href="hobbies.html">Hobbies</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-						<li><a href="microjuego.html">Juego</a></li>
-					</ul>
-				</nav>
-				
-			</header>
-			
-			<h2>Contacto</h2>
-			
-			<p style="font-size: 12px"><em>Los campos con (*) son obligatorios</em><p>
-			
-			<form onsubmit="return validarCampos()">
-				<p><label for="campo-nombre">Nombre (*): </label><input type="text" name="nombre" id="campo-nombre" class="obligatorio" /></p>
-				<p><label>Contraseña (*): </label><input type="password" name="pass" class="obligatorio" /></<p>
-				<p><label>Edad (*): </label><input type="number" name="edad" value="18" min="1" max="120" class="obligatorio" /></p>
-				<p><label>Nacimiento: </label><input type="date" name="nacimiento" /></p>
-				<p><label>Color favorito: </label><input type="color" name="favorito" /></p>
-				
-				<p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe">Al no aceptar esta cajetilla te subscribes de por vida a mi mailing.</label></p>
-								
-				<p><label></label><input type="submit"/></p>
-			</form>
-			
-		</body>
+	<body class="fondo-papeles">
+		<header class="papel">
+			<h1>CYBERSECURITY PORTFOLIO</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="microjuego.html">Juego</a></li>
+				</ul>
+			</nav>
+		</header>
 		
-	</main>
-	
-	<footer>
-		<nav class="navegacion-web">
-			<ul>
-				<li><a href="index.html">Home</a> - Presentación personal.</li>
-				<li><a href="cv.html">CV</a> - Estudios y trabajos.</li>
-				<li><a href="hobbies.html">Hobbies</a> - Gustos e intereses.</li>
-				<li><a href="contacto.html">Contacto</a> - WORK IN PROGRESS...</li>
-				<li><a href="microjuego.html">Juego</a> - Minijuego.</li>
-			</ul>
-		</nav>
-		<p>&copy; 2025 XUT</p>
-	</footer>
+		<main class="contenedor-papeles">
+			<article class="papel">
+				<h2>Contacto</h2>
+				<p style="font-size: 12px"><em>Los campos con (*) son obligatorios</em><p>
+				
+				<form onsubmit="return validarCampos()">
+					<p><label for="campo-nombre">Nombre (*): </label><input type="text" name="nombre" id="campo-nombre" class="obligatorio" /></p>
+					<p><label>Contraseña (*): </label><input type="password" name="pass" class="obligatorio" /></p>
+					<p><label>Edad (*): </label><input type="number" name="edad" value="18" min="1" max="120" class="obligatorio" /></p>
+					<p><label>Nacimiento: </label><input type="date" name="nacimiento" /></p>
+					<p><label>Color favorito: </label><input type="color" name="favorito" /></p>
+					
+					<p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe">Al no aceptar esta cajetilla te subscribes de por vida a mi mailing.</label></p>
+									
+					<p><label></label><input type="submit"/></p>
+				</form>
+			</article>
+		</main>
+		
+		<footer class="papel centrado">
+			<nav class="navegacion-web">
+				<ul>
+					<li><a href="index.html">Home</a> - Presentación personal.</li>
+					<li><a href="cv.html">CV</a> - Estudios y trabajos.</li>
+					<li><a href="hobbies.html">Hobbies</a> - Gustos e intereses.</li>
+					<li><a href="contacto.html">Contacto</a> - WORK IN PROGRESS...</li>
+					<li><a href="microjuego.html">Juego</a> - Minijuego.</li>
+				</ul>
+			</nav>
+			<p>&copy; 2025 XUT</p>
+		</footer>
+	</body>
 </html>
